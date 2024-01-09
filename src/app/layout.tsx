@@ -18,12 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white ">
+      <body className="h-full bg-black text-white">
         <header>
           <Header />
         </header>
-        <main>{children}</main>
-        <footer>
+        <main className="  min-h-screen w-full overflow-x-hidden   flex flex-col items-center   ">
+          {children}
+        </main>
+        <footer className="relative  w-full  ">
           <Footer />
         </footer>
       </body>

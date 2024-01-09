@@ -1,0 +1,42 @@
+@keyframes moveBasketball {
+  0% {
+    transform: translate(50vw, 0);
+    opacity: 10%;
+  }
+  40% {
+    transform: translate(40vw, 0);
+    opacity: 20%;
+  }
+  50% {
+    transform: translate(30vw, -20vh); /* 조절 가능한 값 */
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.basketballContainer {
+  position: absolute;
+  bottom: 10vh; /* 조절 가능한 값 */
+  left: 0;
+  animation: moveBasketball 5s linear infinite; /* 조절 가능한 값 */
+}
+
+.test {
+  background-color: red;
+}
+
+.goal-text {
+  position: absolute;
+  bottom: 5vh; /* 조절 가능한 값 */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: showGoalText 0.5s ease forwards; /* 조절 가능한 값 */
+}
+
+@keyframes showGoalText {
+  100% {
+    opacity: 1;
+  }
+}

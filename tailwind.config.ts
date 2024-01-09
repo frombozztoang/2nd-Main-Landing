@@ -38,12 +38,19 @@ const config: Config = {
       },
       screens: {
         mobile: "768px",
-        tablet: "1024px",
+        tablet: "820px",
       },
+    },
+    fontFamily: {
+      pretendard: ["pretendard"],
     },
   },
 
-  plugins: [require("tailwindcss"), require("autoprefixer")],
+  plugins: [
+    require("tailwindcss"),
+    require("autoprefixer"),
+    require("tailwindcss-animated"),
+  ],
 };
 
 export default config;
